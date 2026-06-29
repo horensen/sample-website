@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get the app — QuickBite</title>
+  <meta name="description" content="Get the QuickBite app, partner your restaurant or start driving. Reach our customer, partnerships and driver teams." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="QuickBite home">
+        <span class="brand-mark" aria-hidden="true">🍔</span>
+        <span class="brand-name">Quick<span>Bite</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="restaurants.html">For Restaurants</a></li>
+          <li><a href="drivers.html">For Drivers</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="#" class="btn btn-ghost">Sign in</a>
+        <a href="contact.html" class="btn btn-primary" aria-current="page">Order now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero short">
+      <div class="container reveal">
+        <span class="eyebrow">Get started</span>
+        <h1>Your next great meal is <span class="grad">minutes away</span></h1>
+        <p class="lead">Drop your email and we'll send a link to get the app. Ordering with accurate ETAs, clear pricing and live tracking takes seconds.</p>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== Contact / signup grid ===== -->
+    <section class="section contact-section">
+      <div class="container contact-grid">
+        <!-- Signup card -->
+        <div class="contact-card reveal">
+          <h2>Get the app</h2>
+          <p>We'll email you a download link and the latest from your neighbourhood.</p>
+          <form class="signup-form" id="orderForm" novalidate>
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="Your name" autocomplete="name" />
+
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" name="email" placeholder="you@example.com" autocomplete="email" required />
+
+            <label for="reasonInput">I'm interested in</label>
+            <select id="reasonInput" name="reason">
+              <option value="ordering">Ordering food</option>
+              <option value="restaurant">Partnering my restaurant</option>
+              <option value="driving">Becoming a driver</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary btn-lg">Get the app</button>
+            <p class="cta-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+
+        <!-- Contact channels -->
+        <div class="contact-info reveal">
+          <h2>Talk to us</h2>
+          <p class="contact-lead">Whatever brings you to QuickBite, there's a team ready to help.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-emoji">🙋</span>
+              <div>
+                <h3>Customer support</h3>
+                <p>Order issues are triaged and resolved fast.</p>
+                <a href="mailto:support@quickbite.example">support@quickbite.example</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-emoji">🍳</span>
+              <div>
+                <h3>Restaurant partnerships</h3>
+                <p>List your kitchen and reach local customers.</p>
+                <a href="mailto:partners@quickbite.example">partners@quickbite.example</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-emoji">🛵</span>
+              <div>
+                <h3>Driver onboarding</h3>
+                <p>Smart routes and clear earnings await.</p>
+                <a href="mailto:drivers@quickbite.example">drivers@quickbite.example</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-emoji">📍</span>
+              <div>
+                <h3>HQ</h3>
+                <p>Available in select urban neighbourhoods.</p>
+                <a href="#">See coverage areas</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (shared) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">🍔</span>
+          <span class="brand-name">Quick<span>Bite</span></span>
+        </a>
+        <p>The most reliable way to get great food from local restaurants — fast, accurate and affordable.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#how">How it works</a></li>
+          <li><a href="features.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="restaurants.html">For Restaurants</a></li>
+          <li><a href="drivers.html">For Drivers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> QuickBite. All rights reserved.</span>
+      <span class="footer-legal"><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

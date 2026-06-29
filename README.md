@@ -58,3 +58,26 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 Deploy by uploading the folder to any static host — GitHub Pages, Netlify, Vercel or Cloudflare.
 Pages all work with no configuration.
+
+## Pages
+
+A multi-page static site. All pages share the same header, footer, `styles.css` and `script.js`.
+
+
+| File               | Page            | Contents                                                                                        |
+| ------------------ | --------------- | ----------------------------------------------------------------------------------------------- |
+| `index.html`       | Home            | Hero with live-tracking mockup, why QuickBite, feature highlights, stats, audience teasers, CTA |
+| `features.html`    | Features        | Full feature grid, how it works, FAQ                                                            |
+| `restaurants.html` | For Restaurants | Partner Portal, partner benefits, stats                                                         |
+| `drivers.html`     | For Drivers     | Driver app, driver benefits                                                                     |
+| `about.html`       | About           | Vision, problem, strategic pillars, testimonials                                                |
+| `contact.html`     | Get the app     | Signup form and contact channels                                                                |
+
+
+
+| File         | Purpose                                                        |
+| ------------ | -------------------------------------------------------------- |
+| `styles.css` | All styling, layout and responsive rules                       |
+| `script.js`  | Mobile nav, FAQ accordion, scroll reveals, stat counters, form |
+
+
