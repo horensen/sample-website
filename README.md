@@ -1,4 +1,4 @@
-# QuickBite — Marketing Website
+# QuickBite — Sample Website
 
 A simple, fast marketing site for **QuickBite**, built in pure HTML, CSS and JavaScript (no
 frameworks, no build step). Content is based on the QuickBite product strategy and PRDs.
