@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBite — Great food, delivered on time. Every time.</title>
+  <meta name="description" content="QuickBite is the most reliable way to get great food from local restaurants — delivered fast, accurately and affordably. Live tracking, accurate ETAs and clear pricing on every order." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Mark JS as available before first paint so reveal animations never hide content from no-JS users -->
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="QuickBite home">
+        <span class="brand-mark" aria-hidden="true">🍔</span>
+        <span class="brand-name">Quick<span>Bite</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#restaurants">For Restaurants</a></li>
+          <li><a href="#drivers">For Drivers</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#" class="btn btn-ghost">Sign in</a>
+        <a href="#order" class="btn btn-primary">Order now</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">🚀 On-time, on-budget, every order</span>
+          <h1>Great food, delivered on&nbsp;time. <span class="grad">Every&nbsp;time.</span></h1>
+          <p class="lead">
+            QuickBite is the most reliable way to get great food from your favourite local
+            restaurants — fast, accurate and affordably priced. You always know exactly where
+            your order is and what it costs.
+          </p>
+          <div class="hero-actions">
+            <a href="#order" class="btn btn-primary btn-lg">Order now</a>
+            <a href="#restaurants" class="btn btn-outline btn-lg">Partner with us</a>
+          </div>
+          <ul class="hero-trust">
+            <li><strong>4.9★</strong> avg. order rating</li>
+            <li><strong>2,400+</strong> local restaurants</li>
+            <li><strong>No surprise fees</strong> at checkout</li>
+          </ul>
+        </div>
+
+        <!-- Live-tracking phone mockup -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="track-head">
+                <span class="track-status">On the way</span>
+                <span class="track-eta">ETA <strong id="etaClock">12 min</strong></span>
+              </div>
+              <div class="track-map">
+                <div class="route"></div>
+                <div class="pin pin-store">🏪</div>
+                <div class="pin pin-rider">🛵</div>
+                <div class="pin pin-home">🏠</div>
+              </div>
+              <div class="track-steps">
+                <div class="tstep done"><span class="dot"></span> Order confirmed</div>
+                <div class="tstep done"><span class="dot"></span> Preparing your food</div>
+                <div class="tstep active"><span class="dot"></span> Out for delivery</div>
+                <div class="tstep"><span class="dot"></span> Delivered</div>
+              </div>
+              <div class="track-bill">
+                <div class="bill-row"><span>Items</span><span>$24.50</span></div>
+                <div class="bill-row"><span>Delivery</span><span>$2.99</span></div>
+                <div class="bill-row total"><span>Total</span><span>$27.49</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floaty floaty-1">💳 Payment confirmed</div>
+          <div class="floaty floaty-2">⭐ Rate your meal</div>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== Logos / trust bar ===== -->
+    <section class="marquee-wrap" aria-label="Trusted by local favourites">
+      <p class="marquee-label">Bringing you the neighbourhood's best</p>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>🍜 Noodle House</span><span>🍕 Bella Pizza</span><span>🥗 Green Bowl</span>
+          <span>🍗 Crispy Co.</span><span>🌮 Taco Loco</span><span>🍱 Sakura Bento</span>
+          <span>☕ Daily Grind</span><span>🍔 Patty Lab</span>
+          <span>🍜 Noodle House</span><span>🍕 Bella Pizza</span><span>🥗 Green Bowl</span>
+          <span>🍗 Crispy Co.</span><span>🌮 Taco Loco</span><span>🍱 Sakura Bento</span>
+          <span>☕ Daily Grind</span><span>🍔 Patty Lab</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Problem → Promise ===== -->
+    <section class="section problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Why QuickBite</span>
+          <h2>Food delivery shouldn't be a gamble</h2>
+          <p>Late arrivals, mystery fees, failed payments and slow support push people to switch apps.
+             We built QuickBite to win on the one thing that matters most: <strong>trust</strong>.</p>
+        </div>
+        <div class="compare reveal">
+          <div class="compare-col bad">
+            <h3>The usual delivery app</h3>
+            <ul>
+              <li>“Arriving soon” that means anything</li>
+              <li>Fees that appear at checkout</li>
+              <li>Payment fails, order lost</li>
+              <li>Complaints disappear into a void</li>
+            </ul>
+          </div>
+          <div class="compare-col good">
+            <h3>The QuickBite way</h3>
+            <ul>
+              <li>Accurate ETAs with live tracking</li>
+              <li>Clear, upfront pricing — no surprises</li>
+              <li>Reliable checkout that just works</li>
+              <li>Every issue triaged and resolved fast</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Built for reliability</span>
+          <h2>Everything you need for a flawless order</h2>
+          <p>Each feature is designed around our promise: you always know where your order is, what it costs, and that it'll arrive on time.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">📍</div>
+            <h3>Accurate ETAs &amp; live tracking</h3>
+            <p>Our delivery prediction engine learns from real road and kitchen data, so the time you see is the time it arrives — watch it move on the map.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">🧾</div>
+            <h3>Transparent pricing</h3>
+            <p>Item prices, delivery and taxes are clear before you pay. What you see is what you're charged — no fees sneaking in at the last step.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">💳</div>
+            <h3>Frictionless checkout</h3>
+            <p>Reliable, secure payments with your saved methods. Fewer failures, faster checkout, and instant confirmation on every order.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">🍣</div>
+            <h3>Smart discovery</h3>
+            <p>Search, filters and personalised picks help you reorder favourites and discover food you'll love — without endless scrolling.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">⭐</div>
+            <h3>Ratings &amp; fast support</h3>
+            <p>Rate any meal in seconds. Every complaint is triaged, prioritised and resolved — so problems get fixed, not ignored.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">🔔</div>
+            <h3>Effortless accounts</h3>
+            <p>Quick onboarding and timely notifications keep you in the loop at every step — from “order confirmed” to “knock, knock”.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">How it works</span>
+          <h2>From craving to doorstep in three steps</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Discover</h3>
+            <p>Browse local restaurants, search a craving or tap a personalised pick made for your taste.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">2</span>
+            <h3>Order &amp; pay</h3>
+            <p>See the full price upfront and check out in seconds with secure, reliable payments.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">3</span>
+            <h3>Track &amp; enjoy</h3>
+            <p>Follow your order live with an accurate ETA, then rate your meal when it lands.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Stats band ===== -->
+    <section class="section stats-band">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-num" data-count="96" data-suffix="%">0%</span><span class="stat-label">On-time delivery rate</span></div>
+        <div class="stat reveal"><span class="stat-num" data-count="2400" data-suffix="+">0</span><span class="stat-label">Local restaurant partners</span></div>
+        <div class="stat reveal"><span class="stat-num" data-count="12" data-suffix=" min">0</span><span class="stat-label">Avg. delivery time</span></div>
+        <div class="stat reveal"><span class="stat-num" data-count="99" data-suffix="%">0%</span><span class="stat-label">Crash-free sessions</span></div>
+      </div>
+    </section>
+
+    <!-- ===== For Restaurants ===== -->
+    <section class="section split" id="restaurants">
+      <div class="container split-grid">
+        <div class="split-copy reveal">
+          <span class="kicker">For restaurants</span>
+          <h2>A fair, easy platform that grows your kitchen</h2>
+          <p>The Restaurant Partner Portal gives you control over menus, hours and availability,
+             with clear insight into orders and performance — so a busy night runs smoothly.</p>
+          <ul class="check-list">
+            <li>Manage menus, pricing and availability in real time</li>
+            <li>Live order flow built to keep your kitchen productive</li>
+            <li>Transparent payouts and performance insights</li>
+            <li>Reach reliability-loving customers near you</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Become a partner</a>
+        </div>
+        <div class="split-visual reveal" aria-hidden="true">
+          <div class="panel">
+            <div class="panel-top"><span class="panel-title">Partner Portal</span><span class="badge live">● Live</span></div>
+            <div class="panel-stat"><span>Today's orders</span><strong>148</strong></div>
+            <div class="panel-bars">
+              <div style="--h:40%"></div><div style="--h:65%"></div><div style="--h:55%"></div>
+              <div style="--h:80%"></div><div style="--h:72%"></div><div style="--h:95%"></div>
+              <div style="--h:60%"></div>
+            </div>
+            <div class="panel-rows">
+              <div class="prow"><span>🍜 Ramen Set</span><span class="ok">In stock</span></div>
+              <div class="prow"><span>🥟 Gyoza (6pc)</span><span class="ok">In stock</span></div>
+              <div class="prow"><span>🍱 Bento Box</span><span class="warn">Low</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== For Drivers ===== -->
+    <section class="section split reverse" id="drivers">
+      <div class="container split-grid">
+        <div class="split-visual reveal" aria-hidden="true">
+          <div class="panel dark">
+            <div class="panel-top"><span class="panel-title">Driver app</span><span class="badge">Route optimised</span></div>
+            <div class="driver-eta">Next drop-off <strong>4 min</strong></div>
+            <div class="driver-route">
+              <span class="dr-dot start">🏪</span>
+              <span class="dr-line"></span>
+              <span class="dr-dot end">🏠</span>
+            </div>
+            <div class="driver-earn">
+              <div><span>This trip</span><strong>$8.40</strong></div>
+              <div><span>Today</span><strong>$112.80</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="split-copy reveal">
+          <span class="kicker">For drivers</span>
+          <h2>Efficient routes, clear earnings</h2>
+          <p>We give drivers smart, optimised routes and a clean, focused experience —
+             because an efficient delivery is a happy customer and a better-paid trip.</p>
+          <ul class="check-list">
+            <li>Optimised routing for faster, fewer-mile deliveries</li>
+            <li>Transparent, trip-by-trip earnings</li>
+            <li>Clear pickup and drop-off instructions</li>
+            <li>Less waiting, more delivering</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Start driving</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Loved by the neighbourhood</span>
+          <h2>People stay for the reliability</h2>
+        </div>
+        <div class="quote-grid">
+          <figure class="quote reveal">
+            <blockquote>“The ETA is actually right. I order on my lunch break and it's at my desk before the break ends.”</blockquote>
+            <figcaption><span class="avatar">A</span> Amelia · Customer</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>“No mystery fees at checkout means I trust it. I've stopped checking three apps before I order.”</blockquote>
+            <figcaption><span class="avatar">R</span> Raj · Customer</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>“The portal makes a Friday rush manageable. Orders are clear and payouts are exactly what I expect.”</blockquote>
+            <figcaption><span class="avatar">M</span> Mei · Restaurant partner</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <span class="kicker">FAQ</span>
+          <h2>Good to know</h2>
+        </div>
+        <div class="accordion reveal">
+          <div class="acc-item">
+            <button class="acc-q" aria-expanded="false">How does QuickBite keep ETAs accurate?<span class="acc-icon" aria-hidden="true">+</span></button>
+            <div class="acc-a"><p>Our delivery prediction service combines live traffic, kitchen prep times and driver location to estimate arrival — and updates it in real time as things change.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-q" aria-expanded="false">Are there hidden fees?<span class="acc-icon" aria-hidden="true">+</span></button>
+            <div class="acc-a"><p>No. Items, delivery and taxes are all shown before you pay. The total you see at checkout is exactly what you're charged.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-q" aria-expanded="false">What if something goes wrong with my order?<span class="acc-icon" aria-hidden="true">+</span></button>
+            <div class="acc-a"><p>Rate the order and raise an issue in a tap. Every complaint is triaged, prioritised and resolved by our support team — we track time-to-resolution closely.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-q" aria-expanded="false">How do I list my restaurant?<span class="acc-icon" aria-hidden="true">+</span></button>
+            <div class="acc-a"><p>Sign up for the Restaurant Partner Portal to manage your menu, availability and orders, and start reaching nearby customers who value reliability.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-q" aria-expanded="false">Which areas do you deliver to?<span class="acc-icon" aria-hidden="true">+</span></button>
+            <div class="acc-a"><p>QuickBite focuses on urban neighbourhoods with a deep, dependable selection of local restaurants. Pop in your address at checkout to see what's available near you.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="order">
+      <div class="container cta-inner reveal">
+        <h2>Hungry? Your next great meal is minutes away.</h2>
+        <p>Order from local favourites with accurate ETAs, clear pricing and live tracking from tap to doorstep.</p>
+        <form class="cta-form" id="orderForm" novalidate>
+          <input type="email" id="emailInput" placeholder="Enter your email" aria-label="Email address" required />
+          <button type="submit" class="btn btn-primary btn-lg">Get the app</button>
+        </form>
+        <p class="cta-note" id="formNote" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">🍔</span>
+          <span class="brand-name">Quick<span>Bite</span></span>
+        </a>
+        <p>The most reliable way to get great food from local restaurants — fast, accurate and affordable.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="#restaurants">For Restaurants</a></li>
+          <li><a href="#drivers">For Drivers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> QuickBite. All rights reserved.</span>
+      <span class="footer-legal"><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
