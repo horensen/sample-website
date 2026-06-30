@@ -6,6 +6,12 @@ on:
   push:
     branches:
       - main
+    # Only deploy when something deployable changes. Commits that touch
+    # only docs/workflows won't re-publish identical content (which Firebase
+    # rejects with a 400 "current active version" error).
+    paths:
+      - 'public/**'
+      - 'firebase.json'
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
