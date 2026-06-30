@@ -1,36 +1,38 @@
-# QuickBite — Sample Website
+# 🍔 QuickBite — Marketing Website
 
-A simple, fast marketing site for **QuickBite**, built in pure HTML, CSS and JavaScript (no
-frameworks, no build step). Content is based on the QuickBite product strategy and PRDs.
+A fast, single-page marketing site for **QuickBite**, the most reliable way to get great food from local restaurants, delivered fast, accurately and affordably.
 
-> **QuickBite** is the most reliable way to get great food from local restaurants — delivered
-> fast, accurately and affordably. We win on trust: customers always know where their order is
-> and what it costs.
+## 🌟 Highlights
 
-## Run it
+- 🍽️ **Three audiences, one page** — converts customers, restaurant partners and drivers.
+- ⚡ **Zero build, zero dependencies** — pure HTML, CSS and vanilla JS.
+- 🎨 **Re-themeable in seconds** — all brand colours live in CSS custom properties.
+- ♿ **Works without JavaScript** — interactivity is progressive enhancement.
+- 📱 **Responsive** — looks great from phone to desktop.
 
-Just open `index.html` in a browser, or serve the folder:
+## ℹ️ Overview
+
+QuickBite competes on **trust**, not selection: customers always know where their order is and what it costs. This site sells that promise with a live-tracking hero, a problem-vs-promise comparison, a feature grid, partner and driver pitches, testimonials, an FAQ and an email capture — all in a single scroll.
+
+It's three static files (`index.html`, `styles.css`, `script.js`) with no framework and no build step, so it loads fast and is trivial to host anywhere.
+
+## 🚀 Usage
+
+Just open the file in a browser:
 
 ```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
+open index.html
 ```
 
-## Files
+To edit, change the copy in `index.html`, the theme colours in `:root` at the top of `styles.css`, or the interactions in `script.js`.
 
-| File         | Purpose                                                        |
-|--------------|----------------------------------------------------------------|
-| `index.html` | Page markup and content                                        |
-| `styles.css` | All styling, layout and responsive rules                       |
-| `script.js`  | Mobile nav, FAQ accordion, scroll reveals, stat counters, form |
+## ⬇️ Installation
 
-## Sections
+No installation or build step. To serve it locally over HTTP:
 
-Hero with a live-tracking phone mockup · problem/promise comparison · feature grid
-(accurate ETAs, transparent pricing, frictionless checkout, smart discovery, ratings & support,
-accounts) · how it works · stats band · For Restaurants · For Drivers · testimonials · FAQ ·
-email-capture CTA · footer.
+```bash
+python3 -m http.server 8000   # then visit http://localhost:8000
+```
 
-The features map to the product's strategic pillars and the PRDs: Delivery ETA Prediction,
-Checkout & Payments Reliability, Search/Discovery & Personalization, In-app Feedback & Ratings,
-Account/Onboarding & Notifications, Restaurant Partner Portal and Driver Experience.
+Deploy by uploading the folder to any static host — GitHub Pages, Netlify, Vercel or Cloudflare.
+Pages all work with no configuration.
