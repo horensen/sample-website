@@ -24,12 +24,14 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 - Dragon fruit 
 Crave
 - Stuff'd
+- Macdonald
 - Mr Bean
 - Tiong Bahru Cafe
 - Jollibean
 - Old Chang Kee
 - Polar Puffs & Cakes
 - Starbucks
+- Cedele
 
 It's three static files (`index.html`, `styles.css`, `script.js`) with no framework and no build step, so it loads fast and is trivial to host anywhere.
 
