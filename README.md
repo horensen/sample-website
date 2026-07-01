@@ -10,9 +10,23 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 - ♿ **Works without JavaScript** — interactivity is progressive enhancement.
 - 📱 **Responsive** — looks great from phone to desktop.
 
-## ℹ️ Overview
+## ℹ️ Features
 
-QuickBite competes on **trust**, not selection: customers always know where their order is and what it costs. This site sells that promise with a live-tracking hero, a problem-vs-promise comparison, a feature grid, partner and driver pitches, testimonials, an FAQ and an email capture — all in a single scroll.
+- Food order
+- Delivery tracking
+- Payments
+- Customer support
+- Restaurant partners
+- Driver partners
+- FAQs
+
+## 🍔 Featured Brands
+- Crave
+- Stuff'd
+- Mr Bean
+- Jollibean
+- Old Chang Kee
+- Polar Puffs & Cakes
 
 It's three static files (`index.html`, `styles.css`, `script.js`) with no framework and no build step, so it loads fast and is trivial to host anywhere.
 
