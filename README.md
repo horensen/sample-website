@@ -21,7 +21,8 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 - FAQs
 
 ## 🍔 Featured Brands
-- Crave
+- Dragon fruit 
+Crave
 - Stuff'd
 - Mr Bean
 - Jollibean
