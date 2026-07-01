@@ -24,6 +24,7 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 - Crave
 - Stuff'd
 - Mr Bean
+- Tiong Bahru Cafe
 - Jollibean
 - Old Chang Kee
 - Polar Puffs & Cakes
