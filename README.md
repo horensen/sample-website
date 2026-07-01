@@ -22,8 +22,8 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 
 ## 🍔 Featured Brands
 - Dragon fruit
-- KFC
-- Crave
+- MOS
+- Craves
 - Stuff'd
 - Macdonald
 - Salvo
