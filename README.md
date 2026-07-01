@@ -37,6 +37,7 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 - Starbucks
 - Qi Jing
 - Cedele
+- Quick bITE
 
 
 It's three static files (`index.html`, `styles.css`, `script.js`) with no framework and no build step, so it loads fast and is trivial to host anywhere.
