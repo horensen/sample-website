@@ -21,10 +21,11 @@ A fast, single-page marketing site for **QuickBite**, the most reliable way to g
 - FAQs
 
 ## 🍔 Featured Brands
-- Dragon fruit 
-Crave
+- Dragon fruit
+- Crave
 - Stuff'd
 - Macdonald
+- Salvo
 - Mr Bean
 - Tiong Bahru Cafe
 - Jollibean
@@ -32,6 +33,7 @@ Crave
 - Old Chang Kee
 - Polar Puffs & Cakes
 - Guzman y Gomez 
+- Qi Jing
 - Cedele
 
 
