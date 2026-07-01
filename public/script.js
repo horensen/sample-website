@@ -123,12 +123,12 @@
       var value = (input.value || "").trim();
       var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
       if (!valid) {
-        note.style.color = "#3a1c10";
+        note.style.color = "#c0392b";
         note.textContent = "Please enter a valid email address.";
         input.focus();
         return;
       }
-      note.style.color = "#fff";
+      note.style.color = "#16a36a";
       note.textContent = "🎉 Thanks! We'll send your download link to " + value + ".";
       form.reset();
     });
