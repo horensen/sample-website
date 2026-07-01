@@ -30,6 +30,7 @@ Crave
 - Jollibean
 - Old Chang Kee
 - Polar Puffs & Cakes
+- Cedele
 
 It's three static files (`index.html`, `styles.css`, `script.js`) with no framework and no build step, so it loads fast and is trivial to host anywhere.
 
